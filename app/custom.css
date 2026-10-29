@@ -123,3 +123,58 @@
     animation: none;
   }
 }
+
+
+/* ── Charcoal / off-white / muted-gold trading-terminal skin ────────────────
+   Presentation-only overrides. Keep Deriv authentication, WebSocket, chart,
+   contract and balance logic untouched.
+*/
+.dark {
+  --primary: 186 153 87;
+  --primary-foreground: 18 18 17;
+  --background: 17 18 19;
+  --foreground: 239 236 228;
+  --card: 25 25 25;
+  --card-foreground: 239 236 228;
+  --popover: 25 25 25;
+  --popover-foreground: 239 236 228;
+  --secondary: 34 33 30;
+  --secondary-foreground: 239 236 228;
+  --accent: 43 39 31;
+  --accent-foreground: 239 232 215;
+  --muted: 38 37 34;
+  --muted-foreground: 171 166 155;
+  --border: 186 153 87 / 0.18;
+  --input: 255 255 255 / 0.10;
+  --ring: 186 153 87;
+  --chart-3: 186 153 87;
+  --button-black: 17 18 19;
+  --button-black-foreground: 239 236 228;
+  --button-white: 239 236 228;
+  --button-white-foreground: 17 18 19;
+}
+
+.dark body {
+  background-color: rgb(17 18 19);
+  color: rgb(239 236 228);
+}
+
+.dark header {
+  border-bottom-color: rgb(186 153 87 / 0.22);
+  background-color: rgb(17 18 19 / 0.94);
+}
+
+.dark main .rounded-lg.border.bg-card {
+  border-color: rgb(186 153 87 / 0.18);
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.18);
+}
+
+.dark #rise-fall-chart {
+  border-radius: 10px;
+  outline: 1px solid rgb(186 153 87 / 0.14);
+  outline-offset: -1px;
+}
+
+.dark :is(input, select, textarea):focus-visible {
+  outline-color: rgb(186 153 87 / 0.72);
+}
